@@ -36,7 +36,7 @@ def filterData():
 
 default_args = {
     'owner': 'ahmadarbain',
-    'start_date': dt.datetime(2024, 10, 30),
+    'start_date': dt.datetime(2024, 9, 30),
     'retries': 1,
     'retry_delay': dt.timedelta(minutes=5)
 }
