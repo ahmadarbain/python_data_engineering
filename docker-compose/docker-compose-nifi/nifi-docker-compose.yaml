@@ -3,7 +3,7 @@ version: '3.8'
 services:
   nifi:
     image: apache/nifi:latest
-    container_name: nifi
+    container_name: nifi-container
     ports:
       - "8080:8080"  # NiFi Web UI port
     environment:
@@ -11,10 +11,10 @@ services:
     volumes:
       - nifi-data:/opt/nifi/nifi-current/logs
     networks:
-      - nifi-network
+      - airflow-network
 
 volumes:
   nifi-data:
   
 networks:
-  nifi-network:
+  airflow-network:
